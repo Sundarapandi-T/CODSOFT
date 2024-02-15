@@ -1,0 +1,20 @@
+.anime1 {
+  animation-name: colorChange;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colorChange {
+  25% {
+    color: orangered;
+  }
+  50% {
+    color: yellow;
+  }
+  75% {
+    color: white;
+  }
+  100% {
+    color: greenyellow;
+  }
+}
