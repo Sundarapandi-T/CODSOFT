@@ -166,6 +166,19 @@
         <i class="fa fa-linkedin"></i>
         <i class="fa fa-envelope"></i>
       </div>
+
+      <!-- Script for Smooth Scrolling -->
+      <script>
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            document.querySelector(anchor.getAttribute("href")).scrollIntoView({
+              behavior: "smooth",
+            });
+          });
+        });
+      </script>
     </section>
   </body>
 </html>
