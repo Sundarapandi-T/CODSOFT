@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav>
+        <h1>SUNDARAPANDI T</h1>
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="main-text">
+        <img src="images/sundar.jpg" alt="profile picture" />
+        <div class="para">
+          <p>
+            Hello! I'm <span class="name">Sundarapandi</span>, a dedicated web
+            developer with a strong foundation in HTML, CSS, and JavaScript.
+            With a passion for crafting beautiful and functional web
+            experiences, I've honed my skills through hands-on projects that
+            showcase my creativity and technical expertise.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+      <h1 class="pad">SKILLS</h1>
+      <div class="skills-img">
+        <div>
+          <img src="images/html.png" alt="" />
+          <p>INTERMEDIATE</p>
+        </div>
+        <div>
+          <img src="images/css.png" alt="" />
+          <p>INTERMEDIATE</p>
+        </div>
+        <div>
+          <img src="images/js.png" alt="" />
+          <p>BEGINNER</p>
+        </div>
+        <div>
+          <img src="images/excel.png" alt="" />
+          <p>BEGINNER</p>
+        </div>
+        <div>
+          <img src="images/mysql.png" alt="" />
+          <p>INTERMEDIATE</p>
+        </div>
+        <div>
+          <img src="images/java.png" alt="" />
+          <p>BEGINNER</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <h1 class="pad">PROJECTS</h1>
+      <div class="proj-list">
+        <div class="proj-img">
+          <img src="images/proj1.png" alt="" />
+          <a
+            href="https://github.com/Sundarapandi-T/CODSOFT/tree/main/level-1/task-2-landing_page"
+            >Landing Page</a
+          >
+        </div>
+        <div class="proj-img">
+          <img src="images/proj2.png" alt="" />
+          <a
+            href="https://github.com/Sundarapandi-T/CODSOFT/tree/main/level-1/task-3-calculator"
+            >Calculator</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <h1 class="pad">CONTACT</h1>
+      <div class="conres">
+        <!-- <button>DOWNLOAD RESUME</button> -->
+        <a
+          class="button"
+          id="downloadResumeButton"
+          href="https://github.com/Sundarapandi-T/resume/raw/main/resume.pdf"
+          download="resume.pdf"
+          >DOWNLOAD RESUME</a
+        >
+
+        <div class="form">
+          <form>
+            <table>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    placeholder="Please enter your name"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="email"
+                    placeholder="Please enter a email"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="tel"
+                    maxlength="10"
+                    placeholder="10-digit mobile number"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><button type="submit">CONTACT ME</button></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+      <hr />
+      <div class="footer">
+        <p>© 2024 Sundarapandi T. All rights reserved.</p>
+        <p>Mobile : <a href="#">+91 81108 80081</a></p>
+        <p>Email: <a href="#">sundarapandit2002@gmail.com</a></p>
+        <div class="social">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-whatsapp"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- SMOOTH SCROLL -->
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          document.querySelector(anchor.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

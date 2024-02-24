@@ -1,0 +1,244 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  justify-content: space-between;
+}
+
+nav > h1 {
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+section {
+  padding: 50px 0 0 0;
+  height: 100vh;
+  color: white;
+}
+
+/* ABOUT */
+.about {
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+.main-text {
+  display: flex;
+  align-items: center;
+}
+
+.about img {
+  width: 400px;
+  padding-left: 130px;
+  padding-top: 30px;
+  border-radius: 50%;
+}
+
+.para {
+  text-align: justify;
+  padding: 130px;
+  font-size: 28px;
+}
+
+.name {
+  color: white;
+  font-weight: bolder;
+}
+
+.name:hover {
+  background-color: white;
+  color: black;
+}
+
+/* SKILLS */
+.skills {
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.pad {
+  padding-top: 30px;
+}
+
+.skills .skills-img {
+  display: flex;
+  padding: 20px 200px;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.skills-img img {
+  width: 196px;
+  padding: 15px 15px 15px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  margin-bottom: 2px;
+  height: 150px;
+}
+
+.skills-img img:hover {
+  box-shadow: 0 0 30px blue;
+}
+
+/* PROJECTS */
+.projects {
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.proj-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.proj-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.proj-list img {
+  width: 380px;
+  height: 350px;
+  border-radius: 20%;
+}
+
+.proj-list img:hover {
+  box-shadow: 0 0 20px 0px palegoldenrod;
+}
+
+.proj-list a {
+  padding-top: 7%;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.proj-list a:hover {
+  color: orangered;
+}
+
+/* CONTACT */
+.contact {
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.conres .button {
+  background-color: orangered;
+  width: 250px;
+  height: 100px;
+  color: white;
+  font-size: 30px;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  padding-top: 35px;
+}
+
+.conres .button:hover {
+  background-color: blue;
+}
+
+.contact .conres {
+  display: flex;
+  padding: 2%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.conres .form {
+  background-color: rgb(126, 120, 118);
+  padding: 30px 15px;
+  border-radius: 20px;
+}
+
+.conres .form input {
+  margin-bottom: 35px;
+  width: 300px;
+  height: 30px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  background-color: rgb(213, 234, 243);
+}
+
+.conres .form button {
+  width: 50%;
+  height: 45px;
+  border: none;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.conres .form button:hover {
+  background-color: green;
+}
+
+.footer {
+  text-align: center;
+}
+
+.social {
+  margin: 20px;
+}
+
+.social i {
+  padding: 3px 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.social i:hover {
+  color: orangered;
+}
